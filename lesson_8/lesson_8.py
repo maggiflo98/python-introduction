@@ -55,14 +55,62 @@ class Animal:
         print(self.nature)
         print(self.prey)
         print(self.name)
-        print(self.gender)
-        print(self.feeding)
+
 
 a1=Animal("wild","chicken","mongoose","female","carnivorous")
 a1.getDetails()
 a2=Animal("domestic","goats","lion","male","carnivorous")
 a2.getDetails()
 
+
+
+
 # create a class that has the following
 # name continent:
-# attributes:size,number of countries,location,population,
+# attributes:size,number of countries,location,population
+class Continent:
+    def __init__(self, name,size,numberofcountries,location,population):
+        self.name = name
+        self.size = size
+        self.numberofcountries = numberofcountries
+        self.location = location
+        self.population = population
+    def myContinent(self):
+        print("i live in "+self.name)
+        print("it is  " + self.size + "sq.km")
+        print("it has " + self.numberofcountries + " countries")
+        print("it is located  " + self.location )
+        print("it has " + self.population + " people")
+
+continent1 = Continent("africa","30.37","55","south of Europe","1.216billion")
+continent1.myContinent()
+
+continent2 = Continent("asia","44.57","48","south of Europe","4.4billion")
+continent2.myContinent()
+
+continent3 = Continent("europe","10.18","50","south of Europe","1.216billion")
+continent3.myContinent()
+
+continent4 = Continent("northAmerica","30.37","23","south of Europe","7.84 million")
+continent4.myContinent()
+
+continent5 = Continent("southAmerica","30.37","55","south of Europe","1.216billion")
+continent5.myContinent()
+
+continent6 = Continent("antarctica","14.0","0","south of Europe","1106")
+continent6.myContinent()
+
+continent7 = Continent("australia","8.52","3","south of Equator","39,901")
+continent7.myContinent()
+# changing values
+continent1.location="northpoll"
+print(continent1.location)
+
+
+# deleting property
+del continent1.size
+
+
+# |deleting an object
+del continent1
+
