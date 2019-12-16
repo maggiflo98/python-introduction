@@ -1,0 +1,13 @@
+{% extends'base.html' %}
+{% block body %}
+                {% if products %}
+                     {% for product in products %}
+                                 <ul>
+                                 <img src="" alt="">
+                                     <li>{{ product }}</li>
+                                 </ul>
+                     {% endfor %}
+                {% else %}
+                        <p>products not available</p>
+                {% endif %}
+{% endblock body %} }
